@@ -1,0 +1,154 @@
+/* ===== Pengaturan Umum ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eeecff, #f7f7fc);
+    color: #252746;
+}
+
+/* ===== Judul ===== */
+h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #292b55;
+    margin: 0 0 28px;
+}
+
+/* ===== Kotak Form ===== */
+form {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e7e5f5;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(45, 42, 100, 0.09);
+}
+
+/* ===== Label ===== */
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #414366;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ===== Input dan Select ===== */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    margin-top: 4px;
+    padding: 12px 13px;
+    border: 1px solid #deddf0;
+    border-radius: 8px;
+    background: #fafaff;
+    color: #292b48;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+/* ===== Placeholder ===== */
+input::placeholder {
+    color: #a4a5bb;
+}
+
+/* ===== Efek Fokus ===== */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #8175dc;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(129, 117, 220, 0.13);
+}
+
+/* ===== Checkbox dan Radio ===== */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #7568cf;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    margin: 0 12px 8px 4px;
+    font-weight: 500;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* ===== Jarak Antarbagian ===== */
+form br + br {
+    line-height: 1.5;
+}
+
+/* ===== Tombol Submit ===== */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 18px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #8175dc, #5d50b7);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(93, 80, 183, 0.18);
+    transition: 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #7063cb, #4e429f);
+    box-shadow: 0 7px 17px rgba(93, 80, 183, 0.25);
+    transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* ===== Tampilan HP ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    form {
+        padding: 23px 18px;
+        border-radius: 13px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        font-size: 16px;
+    }
+}

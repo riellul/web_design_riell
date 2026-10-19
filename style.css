@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/af/ab/c5/afabc55c501db8fcd91a3349dcf16251.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+.text-berjalan {
+    color: blue;
+    display: inline-block;
+    white-space: nowrap;
+    animation: jalan 4s linear infinite;
+}
+
+    @keyframes jalan {
+        from {
+            transform: translateX(100%);
+    }
+    to {
+        transform: translateX(300%)
+    } 
+}
